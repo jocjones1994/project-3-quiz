@@ -1,0 +1,288 @@
+<SCRIPT language="JavaScript"
+        type="text/javascript">
+<!--
+//
+// Documentation:
+//   http://chami.com/tips/javascript/
+//
+function checkAnswer(quizForm,
+                     theAnswer,
+                     urlRight,
+                     urlWrong)
+{
+  var s = "?";
+
+  // go through the "current choices"
+  // to find the selected choice.
+  // radio boxes pointing to choices
+  // must be named "cc"
+  // change if necessary
+  //
+  var i = 0;
+  for(;i<quizForm.elements.length;i++)
+  {
+    if(("cc" ==
+        quizForm.elements[i].name) &&
+       (quizForm.elements[i].checked))
+    {
+      s = quizForm.elements[i].value;
+    }
+  }
+
+  // no choice was selected
+  //
+  if("?" == s)
+  {
+    alert("Please make a selection.");
+    return false;
+  }
+
+  // check if we have the correct
+  // choice selected
+  //
+  if(s == theAnswer)
+  {
+    alert("'"+s+"' is correct!");
+    if(urlRight)
+    {
+    document.location.href = urlRight;
+    }
+  }
+  else
+  {
+    alert("'"+s+"' is incorrect.");
+    if( urlWrong )
+    {
+    document.location.href = urlWrong;
+    }
+  }
+
+  // return "false" to indicate not to
+  // submit the form.
+  // change this to "true" if the form
+  // "action" is valid,
+  // i.e. points to a valid CGI script
+  //
+  return false;
+}
+//-->
+</SCRIPT>
+Who does Buddy Hield play for?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who coaches Villanova?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'C');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Roy Williams<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Lon Kruger<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. Jay Wright<BR>
+
+<INPUT TYPE="RADIO" VALUE="D" NAME="cc">
+D.Jim Boeheim<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who led UNC in scoring vs. Syracuse?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Nate Britt<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Brice Johnson<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. Theo Pinson<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Isaih Hicks<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Which team's mascot is a Sooner?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who does Jim Boeheim coach?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who plays in the Big 12?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who plays in the ACC?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who plays in the Big East?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who was the runner up for Player of the Year?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Michael Gbinije
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Buddy Hield<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. BRICE JOHNSON<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Ryan Arcidiacano<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
+
+Who has the most all time wins?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Syracuse<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Oklahoma<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. North Carolina<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+D. Villanova<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</SCRIPT>
